@@ -1,3 +1,18 @@
 .red {
     background-color: red;
 }
+
+.small-thumbnail{
+    width: 150px;
+    height: 150px;
+}
+
+.form-bot {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.form-top {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}

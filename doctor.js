@@ -13,13 +13,17 @@ function getReview() {
             "content": $("#doctorReview").val()
         }
     };
-    let isBoss = confirm("Are you doctor?");
-    if (isBoss) {
-        return local_data;
-    } else {
-        fail;
-    }
-    
+    return local_data;
+}
+
+function mockLogin() {
+    let user = prompt("user")
+    let pwd = prompt("pwd")
+    $("#changable").prepend("<label>Write your review (for doctor : <span style='color:green;'>READY</span>)</label>");
+    $("#logged").remove()
+    $("#doctorReview").removeAttr("disabled")
+    $("#doctorSubmitButton").removeAttr("disabled")
+    return user, pwd
 }
 
 

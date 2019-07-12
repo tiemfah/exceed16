@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Parental</title>
+    <title>Doctor</title>
 
     <!-- bootstrap css -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -16,7 +16,7 @@
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 </head>
 
-<body>
+<body class="text-center">
     <!-- nav bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
         <a class="navbar-brand" href="#"><b>Concentrap</b> </a>
@@ -37,56 +37,32 @@
                     <a class="nav-link" href="test.html">TEST</a>
                 </li>
             </ul>
+            <button class="btn btn-outline-primary btn-sm my-2 my-sm-0 mx-2"
+                onclick="window.location.href = 'register.html'"> Register</button>
+            <button class="btn btn-primary my-2 my-sm-0" onclick="mockLogin()">LOGIN</button>
         </div>
     </nav>
 
-    <!-- main container -->
-    <div class="container pt-2 pl-4">
+    <div class="container">
         <div class="row">
-            <!-- profile -->
-            <div class="col-lg-4 border rounded-lg ">
-                <div class="mx-auto">
-                    <!-- profile pic + name -->
-                    <div class="row p-2">
-                        <div class="col-sm pt-2">
-                            <img src="https://via.placeholder.com/150" alt="profile">
-                        </div>
-                        <div class="col-sm pt-2">
-                            <h2 class="pt-3">P'Ken</h2>
-                        </div>
-                    </div>
-                    <!-- profile info -->
-                    <div class="row p-2 pl-3">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi suscipit eum dolore
-                            fugiat.
-                            In labore voluptatibus enim natus molestiae laborum. Modi iusto et quisquam itaque eveniet
-                            aliquid labore aliquam illo.</p>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta cupiditate quis fuga iure
-                            reprehenderit odit autem sunt maxime esse, culpa, molestiae debitis atque animi quia
-                            consectetur. Omnis vel exercitationem voluptatem?</p>
-                    </div>
-                </div>
+            <div class="col-lg-4">
 
             </div>
+            <div class="col-lg-4">
+                <form class="form-signin">
+                    <h1 class="h3 mb-3 font-weight-normal">Registrastion</h1>
 
-            <!-- data & graph + doctor review -->
-            <div class="col-lg-8">
-                <!-- graph -->
-                <div class="row p-0">
-                    <div id="chart_div" style="width: 100%; height: 400px;"></div>
-                </div>
-                <!-- doctor review -->
-                <div class="row pl-5">
-                    <h1>Doctor review</h1>
-                </div>
-                <div class="row pl-5">
-                    <p id="reviewP"></p>
-                </div>
+                    <input type="name" id="inputName" class="form-control rounded form-top" placeholder="Name Surname" autofocus="">
+                    <input type="email" id="inputEmail" class="form-control rounded" placeholder="Email address">
+                    <input type="password" id="inputPassword" class="form-control rounded form-bot" placeholder="Password">
+                    
+                    <button class="btn btn-lg btn-primary btn-block mt-4" type="submit">Sign up</button>
+                    <p class="mt-5 mb-3 text-muted"> <b>m.svnt</b> © 2017-2019</p>
+                </form>
             </div>
         </div>
+
     </div>
-
-
 
 
     <!-- bootstrap js -->
@@ -101,10 +77,4 @@
     </script>
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <!-- custom script -->
-    <script src="parent.js"></script>
-    <!-- graph script -->
-    <script src="graph.js"></script>
 </body>
-
-</html>
