@@ -23,7 +23,9 @@ function mockLogin() {
     $("#logged").remove()
     $("#doctorReview").removeAttr("disabled")
     $("#doctorSubmitButton").removeAttr("disabled")
-    return user, pwd
+    $("#navbarSupportedContent").append(`<a>Hello, Doctor ${user}</a>`)
+    $("#regBtn").remove()
+    $("#logBtn").remove()
 }
 
 
