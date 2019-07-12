@@ -14,7 +14,6 @@ function getReview() {
         }
     };
     let isBoss = confirm("Are you doctor?");
-    alert(isBoss); // true if OK is pressed
     if (isBoss) {
         return local_data;
     } else {
