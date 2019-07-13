@@ -1,20 +1,11 @@
-.red {
+.red{
     background-color: red;
 }
-
-.small-thumbnail {
-    width: 150px;
-    height: 150px;
+.light-green{
+    color: #69E781;
 }
-
-.form-bot {
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-}
-
-.form-top {
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
+.green {
+    color: #00AF80;
 }
 
 .up_corner {

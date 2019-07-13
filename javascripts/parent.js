@@ -1,8 +1,5 @@
-var url = 'https://exceed.superposition.pknn.dev/data/140';
-
-
 // GET
-fetch(url)
+fetch('https://exceed.superposition.pknn.dev/data/kenmuayRV')
         .then(function (response) {
             return response.json();
         })

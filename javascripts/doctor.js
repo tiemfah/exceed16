@@ -1,4 +1,5 @@
 var url = 'https://exceed.superposition.pknn.dev/data/140';
+
 let ask = "how many times?"
 var local_data = {
     data: {
@@ -11,7 +12,8 @@ var local_data = {
     }
 };
 let userpwd = {
-    "user1": "pwd1"
+    "user1": "pwd1",
+    "mek": "stronk!"
 }
 
 
@@ -34,8 +36,8 @@ function getNumber() {
 }
 
 function mockLogin() {
-    let user = prompt("user")
-    let pwd = prompt("pwd")
+    let user = prompt("Enter your username:")
+    let pwd = prompt("Enter your password:")
     if (userpwd[user] == pwd) {
         $("#changable").prepend("<label>Write your review (for doctor : <span style='color:green;'>READY</span>)</label>");
         $("#logged").remove();
@@ -55,7 +57,7 @@ function mockLogin() {
 
 
 function sendReview() {
-    fetch(url, {
+    fetch('https://exceed.superposition.pknn.dev/data/kenmuayRV', {
             method: 'POST',
             body: JSON.stringify(getReview()),
             headers: {
@@ -72,7 +74,7 @@ function sendReview() {
 }
 
 function sendPlayReq() {
-    fetch(url+'1', {
+    fetch('https://exceed.superposition.pknn.dev/data/kenmuayMC', {
             method: 'POST',
             body: JSON.stringify(getNumber()),
             headers: {

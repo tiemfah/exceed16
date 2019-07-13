@@ -1,4 +1,4 @@
-var url = 'https://exceed.superposition.pknn.dev/data/1402';
+var url = 'https://exceed.superposition.pknn.dev/data/kenmuaySTAT';
 var stat = {
     data: {
         "1": 20,
