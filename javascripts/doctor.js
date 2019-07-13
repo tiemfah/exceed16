@@ -43,7 +43,7 @@ function mockLogin() {
         $("#logged").remove();
         $("#doctorReview").removeAttr("disabled");
         $("#doctorSubmitButton").removeAttr("disabled");
-        $("#navbarSupportedContent").append("<button class='btn btn-primary btn-sm my-2 my-sm-0 mx-2' onclick='sendPlayReq()'>Set game count</button>")
+        $("#navbarSupportedContent").append("<button class='btn btn-primary btn-sm my-2 my-sm-0 mx-3' onclick='sendPlayReq()'>Set game count</button>")
         $("#navbarSupportedContent").append(`<a>Hello, Doctor ${user}</a>`);
         $("#regBtn").remove();
         $("#logBtn").remove();
